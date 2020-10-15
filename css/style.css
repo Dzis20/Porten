@@ -59,6 +59,9 @@ p.logo {
     font-weight: bold;
     cursor: pointer;
 }
+.burger-menu {
+    display: none;
+}
 .menu-right {
     display: flex;
     align-items: center;
@@ -183,7 +186,7 @@ p.header-text {
 .new-coll-list {
     display: flex;
     flex-wrap: wrap;
-    max-width: 100%;
+    
     margin: 0 80px;
     justify-content: space-between;
 }
@@ -193,7 +196,7 @@ p.header-text {
 .item-img {
     background-image: url('../img/watch-background.png');
     height: 325px;
-    max-width: 260px;
+    /* max-width: 260px; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -242,7 +245,7 @@ p.item-price {
     background-color: #fff;
 }
 
-a.catalog-btn {
+a.catalog-btn, a.collection-2018-btn {
     display: inline-block;
     font-size: 18px;
     text-transform: uppercase;
@@ -255,6 +258,7 @@ a.catalog-btn {
     margin-bottom: 57px;
 }
 
+
 .collection-2018 {
     background-color: #000;
     display: flex;
@@ -263,6 +267,10 @@ a.catalog-btn {
 
 .collection-left {
     width: 50%;
+}
+.collection-left img {
+    width: 100%;
+    height: 100%;
 }
 .collection-right {
     width: 50%;
@@ -364,7 +372,9 @@ p.text-about-coll {
 .footer {
     background-image: url('../img/footer-background.png');
     padding-top: 100px;
-    padding-bottom: 100px;
+    padding-bottom: 50px;
+    background-size: cover;
+    background-position-x: center;
 }
 .footer-content {
     display: flex;
@@ -373,6 +383,7 @@ p.text-about-coll {
 }
 .footer-part {
     width: 350px;
+    margin-bottom: 50px;
 }
 
 .footer-content h2 {
@@ -405,6 +416,7 @@ li.footer-nav-item a {
 .footer-form {
     margin-top: 37px;
     display: flex;
+    flex-wrap: wrap;
 }
 #mail {
     fill: #fff;
